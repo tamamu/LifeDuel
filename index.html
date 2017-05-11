@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Life Duel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>* {margin:0; padding:0;} html {width:100vw; height:100vh;}</style>
+</head>
+<body>
+	<div id="mount"></div>
+	<script src="client.js"></script>
+	<script>
+		Elm.Client.embed(
+			document.getElementById('mount'),
+			window.location.href.replace('http', 'ws')
+		);
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "life-duel",
+  "version": "1.0.0",
+  "description": "Life game battle",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./",
+		"build:server": "elm-make ./Server.elm --output ./server.js",
+		"build:client": "elm-make ./Client.elm --output ./client.js",
+		"build": "npm run build:server && npm run build:client"
+  },
+  "author": "Tamamu",
+  "license": "MIT",
+  "dependencies": {
+    "elm-websocket-server": "^1.0.0"
+  }
+}
